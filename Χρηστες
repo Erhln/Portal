@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    width: {
+                        'custom': '200px',
+                        'box': '140px',
+                    },
+                    height: {
+                        'custom': '100px',
+                        'box': '170px',
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    gap: {
+                        'custom': '20px'
+                    }
+                }
+            }
+        }
+    </script>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&Caveat:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Portal</title>
+</head>
+
+<body class="overflow-y-hidden">
+    <div class="fixed top-0 left-60 w-5/6 bg-white p-4 z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="text-gray-400 text-2xl font-bold">ΤΕΑ ΑΠΛ</div>
+                <div class="absolute right-20">
+                    <div class="lang">
+                        <a href="/?lang=el" class="lang-item active">
+                            ΕΛ
+                        </a>
+                        <a href="/?lang=en" class="lang-item">
+                            EN
+                        </a>
+                    </div>
+                </div>
+                <span><i class="fa fa-user text-gray-400 text-3xl" aria-hidden="true"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed top-0 left-60 w-5/6 bg-white p-4 z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="text-gray-400 text-2xl font-bold">ΤΕΑ ΑΠΛ</div>
+                <span><i class="fa fa-user text-gray-400 text-3xl absolute right-5 -mt-5" aria-hidden="true"></i></span>
+                <div class="flex items-center md:order-2 absolute right-20">
+                    <button type="button" data-dropdown-toggle="language-dropdown-menu"
+                        class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <svg class="w-5 h-5 mr-2 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900">
+                            <path fill="#b22234" d="M0 0h7410v3900H0z" />
+                            <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff"
+                                stroke-width="300" />
+                            <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
+                            <g fill="#fff">
+                                <g id="d">
+                                    <g id="c">
+                                        <g id="e">
+                                            <g id="b">
+                                                <path id="a"
+                                                    d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z" />
+                                                <use xlink:href="#a" y="420" />
+                                                <use xlink:href="#a" y="840" />
+                                                <use xlink:href="#a" y="1260" />
+                                            </g>
+                                            <use xlink:href="#a" y="1680" />
+                                        </g>
+                                        <use xlink:href="#b" x="247" y="210" />
+                                    </g>
+                                    <use xlink:href="#c" x="494" />
+                                </g>
+                                <use xlink:href="#d" x="988" />
+                                <use xlink:href="#c" x="1976" />
+                                <use xlink:href="#e" x="2470" />
+                            </g>
+                        </svg>
+                        English (US)
+                    </button>
+                    <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+                        id="language-dropdown-menu">
+                        <ul class="py-2 font-medium" role="none">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                    role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2"
+                                            xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us"
+                                            viewBox="0 0 512 512">
+                                            <g fill-rule="evenodd">
+                                                <g stroke-width="1pt">
+                                                    <path fill="#bd3d44"
+                                                        d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                                        transform="scale(3.9385)" />
+                                                    <path fill="#fff"
+                                                        d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                                        transform="scale(3.9385)" />
+                                                </g>
+                                                <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
+                                                <path fill="#fff"
+                                                    d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
+                                                    transform="scale(3.9385)" />
+                                            </g>
+                                        </svg>
+                                        English (US)
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                    role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de"
+                                            viewBox="0 0 512 512">
+                                            <path fill="#ffce00" d="M0 341.3h512V512H0z" />
+                                            <path d="M0 0h512v170.7H0z" />
+                                            <path fill="#d00" d="M0 170.7h512v170.6H0z" />
+                                        </svg>
+                                        Deutsch
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button data-collapse-toggle="navbar-language" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-language" aria-expanded="false">
+                        <span class="sr-only">Open language-dropdown-menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex h-screen bg-gray-200">
+        <div class="bg-blue-500 w-1/6 p-6 ">
+            <span><i class="fa fa-superpowers text-white" aria-hidden="true"></i></span>
+            <span class="text-white text-lg font-bold">Portal</span>
+            <br>
+            <span class="text-white text-lg font-bold">Ασφαλισμένου</span>
+            <br>
+            <hr>
+            <div class="bg-blue-500 p-4 flex items-center group hover:text-white">
+                <span><i class="fa fa-tachometer text-slate-300 group-hover:text-white" aria-hidden="true"></i></span>
+                <span>
+                    <a href="Dashboard.html" class="text-slate-300 ml-2 group-hover:text-white">Dashboard</a>
+                </span>
+            </div>
+            <div class="bg-blue-500 p-4 flex items-center group hover:text-white">
+                <span><i class="fa fa-user-o text-slate-300 group-hover:text-white" aria-hidden="true"></i></span>
+                <span class="text-slate-300 ml-2 group-hover:text-white">Στοιχεία Ασφαλισμένου</span>
+            </div>
+            <div class="bg-blue-500 p-4 flex items-center group hover:text-white">
+                <span><i class="fa fa-balance-scale text-slate-300 group-hover:text-white"
+                        aria-hidden="true"></i></span>
+                <span class="text-slate-300 ml-2 group-hover:text-white">Εισφορές</span>
+            </div>
+            <div class="bg-blue-500 p-4 flex items-center group hover:text-white">
+                <span><i class="hover:text-white" aria-hidden="true"></i></span>
+                <span class="text-slate-300 ml-2">Ατομικός Λογαριασμός</span>
+            </div>
+            <div class="bg-blue-500 p-4 flex items-center group hover:text-white">
+                <span><i class="fa fa-file-o text-slate-300 group-hover:text-white" aria-hidden="true"></i></span>
+                <span class="text-slate-300 ml-2 group-hover:text-white">Έγγραφα</span>
+            </div>
+            <div class="border-t-2 border-solid pt-4 pb-5 ml-2">
+                <p class="-mt-1 text-slate-300 text-sm hover:text-white">ΔΙΑΧΕΙΡΙΣΤΗΣ</p>
+            </div>
+            <div class="bg-blue-500 p-4 flex items-center group hover:text-white">
+                <span><i class="fa fa-users text-slate-300 group-hover:text-white" aria-hidden="true"></i></span>
+                <span class="text-slate-300 ml-2 group-hover:text-white">Ασφαλισμένοι</span>
+            </div>
+            <div class="bg-blue-500 p-4 flex items-center group hover:text-white">
+                <span><i class="fa fa-users text-slate-300 group-hover:text-white" aria-hidden="true"></i></span>
+                <span class="text-slate-300 ml-2 group-hover:text-white">Χρήστες</span>
+            </div>
+            <div class="bg-blue-500 p-4 flex items-center group hover:text-white">
+                <span><i class="fa fa-history text-slate-300 group-hover:text-white" aria-hidden="true"></i></span>
+                <span class="text-slate-300 ml-2 group-hover:text-white">Ιστορικό</span>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="bg-gray-200 p-4 absolute top-0 right-4 w-6/6 h-auto left-60">
+        <div class="min-h-screen bg-gray-200">
+            <div class="bg-gray-200 p-4 flex left-0">
+                <span><i class="fa fa-users text-gray-800 text-2xl mt-20" aria-hidden="true"></i></span>
+                <span class="text-gray-800 ml-2 text-2xl mt-20">Χρήστες</span>
+            </div>
+            <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mt-2 ml-5">
+                <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                Ενεργοποίηση Λογαριασμού
+            </button>
+            <div class="bg-gray-200 p-4 left-0">
+                <div class="container mx-auto">
+                    <div class="flex items-center">
+                        <input type="text" placeholder="Όνομα" class="p-2 rounded-l-md outline-none">
+                        <input type="text" placeholder="Username" class="p-2 outline-none">
+                        <input type="text" placeholder="Email" class="p-2 outline-none">
+                        <input type="text" placeholder="Αρ. Μητρώου" class="p-2 rounded-r-md outline-none">
+                        <button
+                            class="bg-blue-500 text-white p-2 rounded-r-md hover:bg-blue-600 focus:outline-none flex items-center space-x-2">
+                            Αναζήτηση
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -37,15 +37,83 @@
 </head>
 
 <body class="overflow-y-hidden">
-    <div class="fixed top-0 left-60 w-5/6 bg-white p-4 z-50 ">
+    <div class="fixed top-0 left-60 w-5/6 bg-white p-4 z-50">
         <div class="container mx-auto">
             <div class="flex justify-between items-center">
                 <div class="text-gray-400 text-2xl font-bold">ΤΕΑ ΑΠΛ</div>
-                <span><i class="fa fa-user text-gray-400 text-3xl absolute right-2 -mt-4" aria-hidden="true"></i></span>
-                <div class="text-black absolute right-12">Ονοματεπώνυμο Χρήστη</div>
+                <span><i class="fa fa-user text-gray-400 text-3xl absolute right-2 -mt-5" aria-hidden="true"></i></span>
+                <div class="relative inline-block text-right absolute right-10">
+                    <button id="dropdownButton"
+                        class="inline-flex justify-center w-20 rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+                        type="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="greece/Flag_of_Greece_Flat_Round.png" width="25" class="w-6 h-6 mr-2"
+                            alt="Greek Flag">
+                    </button>
+                    <div id="dropdownMenu"
+                        class="origin-top-right absolute right-0 mt-2 w-20 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 language-item"
+                                role="menuitem" data-language="el">
+                                <img src="greece/Flag_of_Greece_Flat_Round.png" width="25" class="w-6 h-6 mr-2"
+                                    alt="Greek Flag">
+                                Ελληνικά
+                            </a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 language-item"
+                                role="menuitem" data-language="en">
+                                <img src="england/flag-of-the-united-states.png" width="25" class="w-10 h-6 mr-2"
+                                    alt="United Kingdom Flag">
+                                English
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownButton = document.getElementById('dropdownButton');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            const languageElements = document.querySelectorAll('.language-item');
+            let selectedLanguage = "el";
+
+
+            function setLanguage(language) {
+                selectedLanguage = language;
+                if (selectedLanguage === "el") {
+                    dropdownButton.innerHTML = `<img src="greece/Flag_of_Greece_Flat_Round.png" width="25" class="w-6 h-6 mr-2" alt="Greek Flag">`;
+                } else if (selectedLanguage === "en") {
+                    dropdownButton.innerHTML = `<img src="england/flag-of-the-united-states.png" width="30" class="w-10 h-6 mr-2" alt="United Kingdom Flag">`;
+                }
+            }
+
+
+            languageElements.forEach(function (element) {
+                element.addEventListener('click', function () {
+                    const language = element.getAttribute('data-language');
+                    setLanguage(language);
+                    dropdownMenu.classList.add('hidden');
+                });
+            });
+
+
+            dropdownButton.addEventListener('click', function () {
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+
+            document.addEventListener('click', function (event) {
+                if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
     <div class="flex h-screen bg-gray-200">
         <div class="bg-blue-500 w-1/6 p-6 ">
             <span><i class="fa fa-superpowers text-white" aria-hidden="true"></i></span>
@@ -160,3 +228,4 @@
 </body>
 
 </html>
+
